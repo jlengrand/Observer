@@ -95,16 +95,9 @@ class Observable():
         if not isinstance(observer, Observer):
             raise TypeError("Unsubscriber must be Observer")
 
-        try:
-            if observer in self.obs_collection:
-                self.obs_collection.remove(observer)
-                #print "%s removed from collection" % (str(observer))
-            else:
-                pass
-                #print "%s not in collection" % (str(observer))
-
-        except TypeError:
-            print "Failed to remove %s" % (str(observer))
+        if not(observer in self.obs_collection):
+            raise ValueError("Observer not subscribed")
+        self.obs_collection.remove(observer)
 
     def __notify(self, mess):
         """

@@ -86,14 +86,17 @@ class TestObserver(unittest.TestCase):
         self.assertEquals(len(self.myObservable.obs_collection), 2)
 
     def testUnsubscribe(self):
-        pass
+        self.myObservable.subscribe(self.myObserver1)
+        self.myObservable.subscribe(self.myObserver2)
+        self.assertEquals(len(self.myObservable.obs_collection), 2)
+        self.myObservable.unsubscribe(self.myObserver1)
+        self.assertEquals(len(self.myObservable.obs_collection), 1)
+
+        self.assertRaises(ValueError, lambda: self.myObservable.unsubscribe(self.myObserver1))  # already removed
+        self.assertRaises(TypeError, lambda: self.myObservable.unsubscribe("Georges"))
 
     def testNotify(self):
         pass
-
-    def testNameUnicity(self):
-        pass
-
 
 if __name__ == '__main__':
     unittest.main()
