@@ -46,9 +46,10 @@ class Observer():
         Automatically called each time Observer receives a notification.
         A notification updates message value
         """
-        if message is not None:
-            self.message = message
-            #print "%s received %s" % (self.name, message)
+        if not isinstance(message, str):
+            raise TypeError("Expected string for message")
+        self.message = message
+        #print "%s received %s" % (self.name, message)
 
     def __str__(self):
         """

@@ -36,6 +36,8 @@ class TestObserver(unittest.TestCase):
         """
         self.myObservable = obs.Observable()
 
+        self.default_mess = "message"
+
         self.name1 = "myObserver1"
         self.myObserver1 = obs.Observer(self.name1)
         self.name2 = "myObserver2"
@@ -56,6 +58,15 @@ class TestObserver(unittest.TestCase):
         self.assertEquals(self.myObserver1.name, self.name1)
         self.assertEquals(str(self.myObserver1), self.name1)
         self.assertRaises(TypeError, lambda: obs.Observer(42))
+
+        # tests message
+        self.assertEquals(self.myObserver1.message, self.default_mess)
+        new_message = "new_message"
+        self.myObserver1.update(new_message)
+        self.assertEquals(self.myObserver1.message, new_message)
+        self.assertRaises(TypeError, lambda: self.myObserver1.update([4, 2]))
+        self.assertRaises(TypeError, lambda: self.myObserver1.update(None))
+
 
     def testSubscribe(self):
 
