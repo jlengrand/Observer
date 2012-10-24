@@ -59,7 +59,7 @@ class TestObserver(unittest.TestCase):
         self.assertEquals(str(self.myObserver1), self.name1)
         self.assertRaises(TypeError, lambda: obs.Observer(42))
 
-        # tests message
+        # tests message and update
         self.assertEquals(self.myObserver1.message, self.default_mess)
         new_message = "new_message"
         self.myObserver1.update(new_message)
@@ -67,13 +67,23 @@ class TestObserver(unittest.TestCase):
         self.assertRaises(TypeError, lambda: self.myObserver1.update([4, 2]))
         self.assertRaises(TypeError, lambda: self.myObserver1.update(None))
 
+    def testObservable(self):
+        self.assertRaises(TypeError, lambda: self.myObservable.set_val(42))
+        self.assertRaises(TypeError, lambda: self.myObservable.set_val(None))
+
+        val = "luke"
+        self.myObservable.set_val(val)
+        self.assertEquals(val, self.myObservable.message)
 
     def testSubscribe(self):
+        self.assertEquals(len(self.myObservable.obs_collection), 0)
+        self.assertRaises(TypeError, lambda: self.myObservable.subscribe(42))
 
+        self.myObservable.subscribe(self.myObserver1)
+        self.assertRaises(ValueError, lambda: self.myObservable.subscribe(self.myObserver1))  # already there
+        self.myObservable.subscribe(self.myObserver2)
 
-        pass
-
-
+        self.assertEquals(len(self.myObservable.obs_collection), 2)
 
     def testUnsubscribe(self):
         pass
@@ -85,33 +95,5 @@ class TestObserver(unittest.TestCase):
         pass
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     unittest.main()
-    # a = Observer("riri")
-    # b = Observer("fifi")
-    # c = Observer("loulou")
-
-    # d = Observable()
-
-    # d.subscribe(a)
-    # d.subscribe(b)
-    # d.subscribe(b)
-    # d.subscribe(c)
-
-    # d.unsubscribe(b)
-
-    # d.set_val(3)
-    # d.set_val()

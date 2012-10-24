@@ -81,21 +81,20 @@ class Observable():
         Adds observer to notification list.
         """
         # FIXME: Check name unique
-        try:
-            if not(observer in self.obs_collection):
-                self.obs_collection.append(observer)
-                #print "%s added to collection" % (str(observer))
-            else:
-                pass
-                #print "%s already in collection" % (str(observer))
+        if not isinstance(observer, Observer):
+            raise TypeError("Subscriber must be Observer")
 
-        except TypeError:
-            print "Failed to add %s" % (str(observer))
+        if (observer in self.obs_collection):
+            raise ValueError("Observer already subscribed")
+        self.obs_collection.append(observer)
 
     def unsubscribe(self, observer):
         """
         Removes observer from notification list.
         """
+        if not isinstance(observer, Observer):
+            raise TypeError("Unsubscriber must be Observer")
+
         try:
             if observer in self.obs_collection:
                 self.obs_collection.remove(observer)
@@ -107,7 +106,7 @@ class Observable():
         except TypeError:
             print "Failed to remove %s" % (str(observer))
 
-    def notify(self, mess):
+    def __notify(self, mess):
         """
         Sends notification message to all subscribed observer
         """
@@ -120,6 +119,8 @@ class Observable():
         Shall be used for automatic polling.
         Sets current Observable value and notifies update to subscribers.
         """
+        if not isinstance(val, str):
+            raise TypeError("Expected string for message")
+
         self.message = val
-        if val != None:
-            self.notify(self.message)
+        self.__notify(self.message)
