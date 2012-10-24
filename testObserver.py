@@ -96,7 +96,21 @@ class TestObserver(unittest.TestCase):
         self.assertRaises(TypeError, lambda: self.myObservable.unsubscribe("Georges"))
 
     def testNotify(self):
-        pass
+        self.myObservable.subscribe(self.myObserver1)
+        self.myObservable.subscribe(self.myObserver2)
+
+        test = "R2D2"
+        self.myObservable.set_val(test)
+        self.assertEquals(self.myObserver1.message, test)
+        self.assertEquals(self.myObserver2.message, test)
+
+
+        self.myObservable.unsubscribe(self.myObserver1)
+        test2 = "C3PO"
+        self.myObservable.set_val(test2 )
+        self.assertEquals(self.myObserver1.message, test)
+        self.assertEquals(self.myObserver2.message, test2)
+
 
 if __name__ == '__main__':
     unittest.main()
