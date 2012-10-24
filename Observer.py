@@ -35,6 +35,9 @@ class Observer():
         Creates Observer.
         An Observer is uniquely defined by its name.vDefault name is 'observer'.
         """
+        if not isinstance(name, str):
+            raise TypeError("Expected string for name")
+
         self.name = name
         self.message = 'message'
 
