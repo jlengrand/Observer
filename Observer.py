@@ -39,7 +39,7 @@ class Observer():
             raise TypeError("Expected string for name")
 
         self.name = name
-        self.message = 'message'
+        self.message = None
 
     def update(self, message):
         """
@@ -73,7 +73,7 @@ class Observable():
         No subscriber is registered yet.
         Message is set to 'message by default'
         """
-        self.message = 'message'
+        self.message = None
         self.obs_collection = []
 
     def subscribe(self, observer):

@@ -60,7 +60,7 @@ class TestObserver(unittest.TestCase):
         self.assertRaises(TypeError, lambda: obs.Observer(42))
 
         # tests message and update
-        self.assertEquals(self.myObserver1.message, self.default_mess)
+        self.assertEquals(self.myObserver1.message, None)
         new_message = "new_message"
         self.myObserver1.update(new_message)
         self.assertEquals(self.myObserver1.message, new_message)
