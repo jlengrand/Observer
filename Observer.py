@@ -24,7 +24,6 @@ Simply copy/paste this file and import Observer to start using it.
  """
 
 import json
-from StringIO import StringIO
 
 
 class Observer():
@@ -51,7 +50,6 @@ class Observer():
         A notification updates message value
         """
         ut = ObsUtility()
-        mess = json.loads(message)
 
         if ut.is_json_valid(message):
             self.message = message
@@ -87,7 +85,6 @@ class Observable():
         """
         Adds observer to notification list.
         """
-        # FIXME: Check name unique
         if not isinstance(observer, Observer):
             raise TypeError("Subscriber must be Observer")
 
@@ -110,9 +107,12 @@ class Observable():
         """
         Sends notification message to all subscribed observer
         """
+        # sends message only to those needed
+        dest = json.loads(mess)["name"]
+
         for observer in self.obs_collection:
-            #print "sent %s to %s" % (mess, str(observer))
-            observer.update(mess)
+            if (len(dest) == 0 ) or (observer.name == dest):
+                observer.update(mess)
 
     def set_val(self, val):
         """
@@ -126,7 +126,7 @@ class Observable():
         else:
             raise TypeError("Expecting a valid JSon Object")
 
-        self.message = val
+        self.message = val  # saves last message sent
         self.__notify(self.message)
 
 
@@ -146,7 +146,7 @@ class ObsUtility():
         # Cheks for the presence of tags
         try:
             #simply access all
-            expected = sorted(["name", "group", "type", "data"]) # should be placed somewhere else
+            expected = sorted(["name", "group", "type", "data"])  # should be placed somewhere else
             got = sorted(mess.keys())
             return (expected == got)
         except KeyError:

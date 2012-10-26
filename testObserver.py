@@ -38,8 +38,6 @@ class TestObserver(unittest.TestCase):
 
         self.myObservable = obs.Observable()
 
-        self.default_mess = "message"
-
         self.name1 = "myObserver1"
         self.myObserver1 = obs.Observer(self.name1)
         self.name2 = "myObserver2"
@@ -68,7 +66,6 @@ class TestObserver(unittest.TestCase):
         self.assertEquals(self.myObserver1.message, new_message)
         self.assertRaises(TypeError, lambda: self.myObserver1.update([4, 2]))
         self.assertRaises(TypeError, lambda: self.myObserver1.update(None))
-
 
     ## Observable
     def testIsJsonValid(self):
@@ -113,18 +110,22 @@ class TestObserver(unittest.TestCase):
         self.myObservable.subscribe(self.myObserver1)
         self.myObservable.subscribe(self.myObserver2)
 
-        test = '{"name": "R2D2","group": "","type": "","data": 42}'
+        test = '{"name": "","group": "","type": "R2D2","data": 42}'
         self.myObservable.set_val(test)
         self.assertEquals(self.myObserver1.message, test)
         self.assertEquals(self.myObserver2.message, test)
 
-
         self.myObservable.unsubscribe(self.myObserver1)
-        test2 = '{"name": "C3PO","group": "","type": "","data": 42}'
-        self.myObservable.set_val(test2 )
+        test2 = '{"name": "","group": "C3PO","type": "","data": 42}'
+        self.myObservable.set_val(test2)
         self.assertEquals(self.myObserver1.message, test)
         self.assertEquals(self.myObserver2.message, test2)
 
+        self.myObservable.subscribe(self.myObserver1)
+        test3 = '{"name": "myObserver1","group": "C3PO","type": "","data": 42}'
+        self.myObservable.set_val(test3)
+        self.assertEquals(self.myObserver1.message, test3)
+        self.assertEquals(self.myObserver2.message, test2)
 
 if __name__ == '__main__':
     unittest.main()
