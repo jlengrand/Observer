@@ -26,6 +26,7 @@ Simply copy/paste this file and import Observer to start using it.
 import json
 from StringIO import StringIO
 
+
 class Observer():
     """
     Implements Observer entity from Observer pattern.
@@ -115,15 +116,22 @@ class Observable():
         Shall be used for automatic polling.
         Sets current Observable value and notifies update to subscribers.
         """
-        #if not isinstance(val, str):
-        #    raise TypeError("Expected string for message")
-
-        self.is_json_valid(val)
+        ut = ObsUtility()
+        if ut.is_json_valid(val):
+            self.message = val
+            self.__notify(self.message)
+        else:
+            raise TypeError("Expecting a valid JSon Object")
 
         self.message = val
         self.__notify(self.message)
 
+
+class ObsUtility():
     # JSON Stuff
+    def __init__(self):
+        pass
+
     def is_json_valid(self, val):
         """
         Returns True if val is a valid JSon Object.

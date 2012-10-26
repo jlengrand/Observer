@@ -34,6 +34,8 @@ class TestObserver(unittest.TestCase):
         """
         Method called before each test
         """
+        self.ut = obs.ObsUtility()
+
         self.myObservable = obs.Observable()
 
         self.default_mess = "message"
@@ -70,46 +72,42 @@ class TestObserver(unittest.TestCase):
 
     ## Observable
     def testIsJsonValid(self):
-        self.assertEquals(True, self.myObservable.is_json_valid('{"name": "Bob","group": "","type": "","data": 42}'))
-        self.assertEquals(False, self.myObservable.is_json_valid('{"namee": "Bob","group": "","type": "","data": 42}'))
-        self.assertEquals(False, self.myObservable.is_json_valid('{"name": "Bob","group": "","type": ""}'))
+        self.assertEquals(True, self.ut.is_json_valid('{"name": "Bob","group": "","type": "","data": 42}'))
+        self.assertEquals(False, self.ut.is_json_valid('{"namee": "Bob","group": "","type": "","data": 42}'))
+        self.assertEquals(False, self.ut.is_json_valid('{"name": "Bob","group": "","type": ""}'))
 
-        self.assertEquals(False, self.myObservable.is_json_valid('{"name": "Bob","group": "","type": "","data": 42, "last":"weekend"}'))
-
+        self.assertEquals(False, self.ut.is_json_valid('{"name": "Bob","group": "","type": "","data": 42, "last":"weekend"}'))
 
     def testObservable(self):
-        pass
-        #self.assertRaises(TypeError, lambda: self.myObservable.set_val('{"name": "Bob","group": "","type": "","data": 42}'))
-        #self.myObservable.set_val('{"name": "Bob","group": "","type": "","data": 42}')
+        self.assertRaises(TypeError, lambda: self.myObservable.set_val('{"group": "","type": "","data": 42}'))
+        self.assertRaises(TypeError, lambda: self.myObservable.set_val('{"c": 0, "b": 0, "a": 0}'))
 
-        #self.assertRaises(TypeError, lambda: self.myObservable.set_val('{"c": 0, "b": 0, "a": 0}'))
+        self.assertRaises(TypeError, lambda: self.myObservable.set_val(42))
+        self.assertRaises(TypeError, lambda: self.myObservable.set_val(None))
 
-        # self.assertRaises(TypeError, lambda: self.myObservable.set_val(42))
-        # self.assertRaises(TypeError, lambda: self.myObservable.set_val(None))
+        val = '{"name": "Bob","group": "","type": "","data": 42}'
+        self.myObservable.set_val(val)
+        self.assertEquals(val, self.myObservable.message)
 
-        # val = "luke"
-        # self.myObservable.set_val(val)
-        # self.assertEquals(val, self.myObservable.message)
+    def testSubscribe(self):
+        self.assertEquals(len(self.myObservable.obs_collection), 0)
+        self.assertRaises(TypeError, lambda: self.myObservable.subscribe(42))
 
-    # def testSubscribe(self):
-    #     self.assertEquals(len(self.myObservable.obs_collection), 0)
-    #     self.assertRaises(TypeError, lambda: self.myObservable.subscribe(42))
+        self.myObservable.subscribe(self.myObserver1)
+        self.assertRaises(ValueError, lambda: self.myObservable.subscribe(self.myObserver1))  # already there
+        self.myObservable.subscribe(self.myObserver2)
 
-    #     self.myObservable.subscribe(self.myObserver1)
-    #     self.assertRaises(ValueError, lambda: self.myObservable.subscribe(self.myObserver1))  # already there
-    #     self.myObservable.subscribe(self.myObserver2)
+        self.assertEquals(len(self.myObservable.obs_collection), 2)
 
-    #     self.assertEquals(len(self.myObservable.obs_collection), 2)
+    def testUnsubscribe(self):
+        self.myObservable.subscribe(self.myObserver1)
+        self.myObservable.subscribe(self.myObserver2)
+        self.assertEquals(len(self.myObservable.obs_collection), 2)
+        self.myObservable.unsubscribe(self.myObserver1)
+        self.assertEquals(len(self.myObservable.obs_collection), 1)
 
-    # def testUnsubscribe(self):
-    #     self.myObservable.subscribe(self.myObserver1)
-    #     self.myObservable.subscribe(self.myObserver2)
-    #     self.assertEquals(len(self.myObservable.obs_collection), 2)
-    #     self.myObservable.unsubscribe(self.myObserver1)
-    #     self.assertEquals(len(self.myObservable.obs_collection), 1)
-
-    #     self.assertRaises(ValueError, lambda: self.myObservable.unsubscribe(self.myObserver1))  # already removed
-    #     self.assertRaises(TypeError, lambda: self.myObservable.unsubscribe("Georges"))
+        self.assertRaises(ValueError, lambda: self.myObservable.unsubscribe(self.myObserver1))  # already removed
+        self.assertRaises(TypeError, lambda: self.myObservable.unsubscribe("Georges"))
 
     # def testNotify(self):
     #     self.myObservable.subscribe(self.myObserver1)
