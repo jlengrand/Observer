@@ -1,0 +1,821 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"myOb",
+				"myObserver1  (variable)"
+			],
+			[
+				"ass",
+				"assertEquals"
+			],
+			[
+				"mes",
+				"message"
+			],
+			[
+				"myO",
+				"myObservable  (variable)"
+			],
+			[
+				"my",
+				"myObserver1"
+			],
+			[
+				"assertR",
+				"assertRaises"
+			],
+			[
+				"new_m",
+				"new_message"
+			],
+			[
+				"d",
+				"default_mess  (variable)"
+			],
+			[
+				"Ob",
+				"Observer  (class)"
+			],
+			[
+				"messa",
+				"message"
+			],
+			[
+				"cur",
+				"cur_ind"
+			],
+			[
+				"prime",
+				"prime_list"
+			],
+			[
+				"cur_",
+				"cur_prime"
+			],
+			[
+				"comp_n",
+				"comp_name"
+			],
+			[
+				"number",
+				"number_to_name"
+			],
+			[
+				"comp",
+				"comp_number"
+			],
+			[
+				"rand",
+				"randrange"
+			],
+			[
+				"name_to",
+				"name_to_number"
+			],
+			[
+				"pr",
+				"prime_list"
+			],
+			[
+				"n",
+				"nb_cur"
+			],
+			[
+				"max",
+				"max_prime"
+			],
+			[
+				"cur_p",
+				"cur_prime"
+			],
+			[
+				"nb_m",
+				"nb_max"
+			],
+			[
+				"prim",
+				"prime_list"
+			],
+			[
+				"sum_",
+				"sum_numbers"
+			],
+			[
+				"win_",
+				"win_cases"
+			],
+			[
+				"win",
+				"win_cases"
+			],
+			[
+				"get",
+				"find_longest_match  (function)"
+			],
+			[
+				"T",
+				"TestCase"
+			],
+			[
+				"Lott",
+				"LotteryError"
+			],
+			[
+				"L",
+				"LotteryError"
+			],
+			[
+				"Not",
+				"NotDateError"
+			],
+			[
+				"other_",
+				"other_date"
+			],
+			[
+				"m",
+				"month2  (variable)"
+			],
+			[
+				"y",
+				"year2  (variable)"
+			],
+			[
+				"days",
+				"days_in_month"
+			],
+			[
+				"my_d",
+				"my_date"
+			],
+			[
+				"No",
+				"NotDateError"
+			],
+			[
+				"check",
+				"check_date"
+			],
+			[
+				"da",
+				"day1"
+			],
+			[
+				"all",
+				"all_permutations"
+			],
+			[
+				"noDa",
+				"noDataOut"
+			],
+			[
+				"num",
+				"number_guys"
+			],
+			[
+				"mess",
+				"message_root"
+			],
+			[
+				"GetP",
+				"GetPath  (function)"
+			],
+			[
+				"outputd",
+				"outputdialog"
+			],
+			[
+				"out",
+				"output_folder  (variable)"
+			],
+			[
+				"Settings",
+				"SettingsTemplate"
+			],
+			[
+				"Settin",
+				"SettingsTemplate"
+			],
+			[
+				"Sett",
+				"SettingsTemplate"
+			],
+			[
+				"Abou",
+				"AboutDialogInfo"
+			],
+			[
+				"Ivol",
+				"IvolutionAbout"
+			],
+			[
+				"About",
+				"AboutBox"
+			],
+			[
+				"getit",
+				"GetItem  (function)"
+			],
+			[
+				"getitem",
+				"GetItemCount  (function)"
+			],
+			[
+				"filel",
+				"filelist"
+			],
+			[
+				"not",
+				"notify"
+			],
+			[
+				"setL",
+				"SetLabel"
+			],
+			[
+				"input",
+				"inputtextbox"
+			],
+			[
+				"get_d",
+				"get_default_parameters"
+			],
+			[
+				"in",
+				"in_fo  (variable)"
+			],
+			[
+				"videospeedc",
+				"videospeedlistChoices"
+			],
+			[
+				"video",
+				"videospeedlist"
+			],
+			[
+				"sys",
+				"system  (function)"
+			],
+			[
+				"file",
+				"fileinput"
+			],
+			[
+				"p",
+				"proxyfile"
+			],
+			[
+				"me",
+				"nsil_metadatasecurity"
+			],
+			[
+				"nsil_im",
+				"nsil_imagery_categories"
+			],
+			[
+				"guy_",
+				"guy_date"
+			],
+			[
+				"sort_",
+				"sort_method"
+			],
+			[
+				"face",
+				"face_params"
+			],
+			[
+				"out_f",
+				"out_format"
+			],
+			[
+				"chec",
+				"check_out_name"
+			],
+			[
+				"fae",
+				"facemovie"
+			],
+			[
+				"facem",
+				"facemovie"
+			],
+			[
+				"Facem",
+				"Facemovie"
+			],
+			[
+				"spli",
+				"splitext"
+			],
+			[
+				"out_",
+				"out_name  (variable)"
+			],
+			[
+				"Set",
+				"SetImageROI"
+			],
+			[
+				"xc",
+				"x_center"
+			],
+			[
+				"resiz",
+				"resized_center"
+			],
+			[
+				"dim",
+				"dim_x"
+			],
+			[
+				"norm",
+				"norm_im"
+			],
+			[
+				"ou",
+				"out_im"
+			],
+			[
+				"fin",
+				"find_final_dimensions"
+			],
+			[
+				"find",
+				"find_reference"
+			],
+			[
+				"crop",
+				"cropdims"
+			],
+			[
+				"guys",
+				"guys"
+			],
+			[
+				"has",
+				"has_face"
+			],
+			[
+				"fl",
+				"flags"
+			],
+			[
+				"h_fla",
+				"h_flags"
+			],
+			[
+				"clas",
+				"classification"
+			],
+			[
+				"class",
+				"classifier"
+			]
+		]
+	},
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"paca",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 514.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jll/perso/GitHub/Observer/Observer.sublime-project",
+		"/C/Users/jll/perso/GitHub/Observer/Observer.py",
+		"/C/Users/jll/Dropbox/03_Taf/00_Configs/06_SublimeText2/Packages/BuildonSave/buildonsave.py",
+		"/C/Users/jll/Desktop/eclipse_juno_64/README.txt",
+		"/C/dev/source/main/spacemetric/core/src/main/com/spacemetric/core/rectify/Rectification1.java",
+		"/C/Users/jll/AppData/Roaming/Sublime Text 2/Packages/User/bat.sublime-build",
+		"/C/Users/jll/perso/GitHub/Observer/Observer.pyc",
+		"/C/Users/jll/perso/GitHub/Observer/Observable.py",
+		"/C/Users/jll/perso/GitHub/Observer/README.md",
+		"/C/Users/jll/perso/GitHub/Observer/README",
+		"/C/Users/jll/perso/workspace/peuler/e_24.py",
+		"/C/Users/jll/perso/workspace/peuler/primes_list.py",
+		"/C/Users/jll/perso/workspace/peuler/e_56.py",
+		"/C/Users/jll/perso/workspace/peuler/e_43.py",
+		"/C/Users/jll/Desktop/money",
+		"/C/dev/source/test/db/cuda/CudaWin64/kernels/rectificationTest-opt.cu",
+		"/C/Users/jll/Desktop/crazy.cu",
+		"/C/dev/source/test/db/cuda/CudaWin64/bin/optimization/DataReader.class",
+		"/C/dev/source/test/db/cuda/CudaWin64/kernels/rectificationTest-full.cu",
+		"/C/dev/source/test/db/cuda/CudaWin64/src/com/spacemetric/cuda/JCudaRectificationTest4.java",
+		"/C/Users/jll/perso/GitHub/SpoPuz/bestbefore/bestbefore.py",
+		"/C/Users/jll/perso/GitHub/SpoPuz/bestbefore/test_bestbefore.py",
+		"/C/Users/jll/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Program Files/MySQL/MySQL Server 5.1/my.ini",
+		"/C/dev/source/test/db/cuda/CudaWin64/src/optimization/WarpCPU.java",
+		"/C/Users/jll/Desktop/data/test1/out",
+		"/C/Users/jll/perso/workspace/peuler/README.markdown",
+		"/C/Users/jll/Downloads/Art contemporain.txt",
+		"/C/Users/jll/Downloads/exercise3_sobel.cu",
+		"/C/Users/jll/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/dev/source/test/db/cuda/CudaWin64/src/JCudaInterpolate.java",
+		"/C/Windows/Temp/Temp1_reduction.zip/NVIDIA GPU Computing SDK/C/src/reduction/reduction.cpp",
+		"/C/Users/jll/Downloads/NVIDIA GPU Computing SDK/C/src/reduction/reduction_kernel.cu",
+		"/C/Users/jll/perso/workspace/peuler/e_67.py",
+		"/C/Users/jll/perso/workspace/peuler/e_53.py",
+		"/C/Users/jll/perso/workspace/peuler/e_42.py",
+		"/C/Users/jll/perso/workspace/peuler/e_41.py",
+		"/C/Users/jll/perso/workspace/peuler/e_38.py",
+		"/C/Users/jll/perso/workspace/peuler/e_8.py",
+		"/C/Users/jll/perso/workspace/peuler/e_97.py",
+		"/C/Users/jll/perso/workspace/peuler/e_79.py",
+		"/C/Users/jll/perso/workspace/peuler/e_47.py",
+		"/C/Users/jll/Downloads/NVIDIA GPU Computing SDK/C/bin/win64/Release/SdkMasterLog.csv",
+		"/C/Users/jll/Downloads/120924135323-001.pdf",
+		"/C/Users/jll/Downloads/reduction.zip",
+		"/C/Windows/Temp/Temp1_reduction.zip/NVIDIA GPU Computing SDK/C/src/reduction/readme.txt",
+		"/C/dev/source/test/db/cuda/CudaWin64/kernels/dumbWarp.cu",
+		"/C/Users/jll/Desktop/tracking_code.js",
+		"/C/dev/source/test/db/cuda/CudaWin64/src/JCudaWarp2D.java",
+		"/C/dev/eclipse/eclipse64/eclipse.ini",
+		"/C/Users/jll/Desktop/3V050311P0000660421B6200001002410.dim",
+		"/C/Users/jll/Desktop/3V050311P0000660421B6200001002410.rpc",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/NormalizedCorrelation/normalizedCorrelation.c",
+		"/C/Users/jll/Desktop/JCudaDriverSample.java",
+		"/C/Users/jll/Downloads/WZa08172",
+		"/C/dev/source/test/da/src/main/jcuda/JCudaDriverSample.java",
+		"/C/dev/source/test/da/src/main/jcuda/JCudaImageTestKernel.cu",
+		"/C/dev/source/test/da/src/main/jcuda/JCudaImageTest.java",
+		"/C/dev/source/test/da/src/main/jcuda/JCudaRuntimeTest.java",
+		"/C/dev/source/test/da/src/main/jcuda/JCudaVectorAdd.java",
+		"/C/dev/source/test/da/src/main/jcuda/TiffHeaderInfo.java",
+		"/C/dev/source/test/da/src/main/jcuda/Dummy.java",
+		"/C/dev/source/test/da/src/main/jcuda/EntropyTest.java",
+		"/C/Users/jll/Desktop/JCudaSampleKernel.cu",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/NormalizedCorrelation/coins_template.pgm",
+		"/C/Users/jll/Desktop/FirstCorrelation/FirstCorrelation/Sobel.c",
+		"/C/Users/jll/perso/workspace/confpooling/README.md",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/Debug/coins_template2.pgm",
+		"/C/Users/jll/Dropbox/Public/output/theme/bootstrap.min.css",
+		"/C/Users/jll/perso/FaceMovie/setup_win.py",
+		"/C/Users/jll/perso/FaceMovie/test/raw_video.py",
+		"/C/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.2/C/src/vectorAdd/vectorAdd.cu",
+		"/C/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.2/C/src/bilateralFilter/filter_kernel.cu",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/NormalizedCorrelation/pgm.c",
+		"/C/Users/jll/Desktop/pgm.c",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/NormalizedCorrelation/coins_template2.pgm",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/NormalizedCorrelation/coins.pgm",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/NormalizedCorrelation/NormalizedCorrelation/pgm.h",
+		"/C/Users/jll/perso/Ivolution/ivolution/FacemovieThread.py",
+		"/C/eula.1033.txt",
+		"/C/Users/jll/Desktop/hisSob.c",
+		"/C/Users/jll/.gitconfig",
+		"/C/Users/jll/Downloads/JCuda-All-0.4.2-bin-windows-x86_64/CUDPP license.txt",
+		"/C/Users/jll/Downloads/JCuda-All-0.4.2-bin-windows-x86_64/License.txt",
+		"/C/Users/jll/Downloads/JCudaRuntimeTest.java",
+		"/C/Program Files (x86)/MSBuild/Microsoft.Cpp/v4.0/BuildCustomizations/CUDA 4.2.targets",
+		"/C/Users/jll/perso/cudahandbook/atomics/README.txt",
+		"/C/Users/jll/Desktop/FirstTestCUDA/FirstTestCUDA/kernel.cu",
+		"/C/Users/jll/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/jll/Desktop/objs.txt",
+		"/C/Users/jll/Desktop/mySob.c",
+		"/C/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.2/OpenCL/src/oclSobelFilter/SobelFilter.cl",
+		"/C/Users/jll/Documents/Spacemetric/complete_DAG_results.java",
+		"/C/Users/jll/Documents/Spacemetric/remove_nsil_products.sql",
+		"/C/Users/jll/Desktop/CUDA_locations.txt",
+		"/C/Users/jll/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/jll/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/jll/Documents/Visual Studio 2010/Projects/FirstCorrelation/FirstCorrelation/sobello.pgm",
+		"/C/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.2/C/bin/win64/Release/particles.txt",
+		"/C/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.0/extras/CUPTI/Readme.txt",
+		"/C/Users/jll/perso/Ivolution/ivolution/gui/IvolutionWindow.py",
+		"/G/instructions.txt",
+		"/C/dev/source/branches/NSIL/spacemetric/cat-ant/src/main/com/spacemetric/product/ant2/DefaultTaskLogger.java",
+		"/C/Users/jll/perso/Ivolution/win_installer.nsi",
+		"/C/Users/jll/perso/Ivolution/ivolution/Facemovie_lib.py",
+		"/C/dev/source/branches/NSIL/spacemetric/util/src/main/com/spacemetric/util/csd/BQSFactor/BQSCompFactor.java",
+		"/C/Users/jll/perso/Ivolution/setup_win.py",
+		"/C/dev/source/branches/NSIL/spacemetric/util/src/main/com/spacemetric/util/csd/BQSFactor/BQSFactor.java",
+		"/C/Users/jll/perso/Ivolution/ivolution/gui/SettingsWindow.py",
+		"/C/Users/jll/perso/Ivolution/ivolution/FaceParams.py",
+		"/C/Users/jll/perso/Ivolution/ivolution/training_types.py",
+		"/C/Users/jll/perso/Ivolution/ivolution/Guy.py",
+		"/C/Users/jll/perso/Ivolution/ivolution/__init__.py",
+		"/C/Users/jll/perso/Ivolution/ivolution/gui/IvolutionTemplate.py",
+		"/C/Program Files (x86)/Spacemetric/Keystone/config/keystone.properties",
+		"/C/dev/source/test/nsili/nsiliClient/Client.java",
+		"/F/ImagePanel.java",
+		"/C/dev/source/test/nsili/nsiliClient/ImagePanel.java",
+		"/C/Users/jll/Documents/Spacemetric/cp_war.py",
+		"/C/Users/jll/Desktop/Synchronize operation failed.eclipse",
+		"/C/Users/jll/Desktop/20120831_1606_42.txt",
+		"/C/Users/jll/Desktop/logMysql",
+		"/C/Users/jll/Desktop/log2.txt",
+		"/F/Client.java",
+		"/C/Users/jll/perso/Ivolution/Ivolutioner",
+		"/C/dev/source/main/products/keystone/install/windows/keystone-server-win64.nsi",
+		"/C/Users/jll/perso/Ivolution/ivolution/gui/__init__.py",
+		"/C/Users/jll/.ssh/plop/id_rsa.pub_sav"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\dev\\source\\branches\\NSIL\\spacemetric\\server\\src\\main\\com\\spacemetric\\server\\csw\\*",
+			"C:\\dev\\source\\branches\\NSIL\\spacemetric\\server\\src\\main\\com\\spacemetric\\server\\csw"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"C:\\dev\\source\\",
+			"myObservable",
+			"val",
+			"<<",
+			"d_b",
+			"out_test",
+			"number",
+			"GpuW",
+			"JCuda",
+			"KERNEL_LENGTH",
+			"c_Kernel",
+			"reduce",
+			"reduce0",
+			"shrQAStart",
+			"gain",
+			"dem",
+			"bulkReader",
+			"startb",
+			"start",
+			"tex2DBilinearLayeredWarp",
+			"other",
+			"date_str",
+			"date1",
+			"}/{\\",
+			"}\n",
+			"dumb",
+			"kernel",
+			"jcu",
+			"940",
+			"relate",
+			");\n",
+			"cudacompile",
+			"failed",
+			"dialo",
+			"section",
+			"2248",
+			".lnk",
+			"setshe",
+			".lnk",
+			".ico",
+			"ico",
+			"creates",
+			"PROGRAMFILES",
+			"HK",
+			"HKCU",
+			"reg_un",
+			"PRODUCT_VERSION",
+			"uninstall",
+			"No face has been found",
+			"list_g",
+			"setup_lo",
+			"self.console_logger",
+			"faces fo",
+			"faces f",
+			"setup_log",
+			"about",
+			"dsk",
+			"icon",
+			"ink",
+			"print",
+			"facep",
+			"sec",
+			"fm",
+			"0.8",
+			"filel",
+			"setup_l",
+			"notify_progress",
+			"notify(",
+			"error",
+			"erro",
+			"fatal",
+			"~",
+			"video",
+			"notebook",
+			"set_parameters",
+			"front",
+			"self.c",
+			"outpu",
+			"input",
+			"sett",
+			"setting",
+			"exif",
+			"profil",
+			"info",
+			"\"\n",
+			"search_f",
+			"self.not",
+			"update",
+			"notify_p",
+			"notif",
+			"notify",
+			"output",
+			"sb",
+			"on_ex",
+			"inputtextbox",
+			"bind",
+			"os.system(\"cls\")",
+			"win_folder",
+			"echo ",
+			"echo",
+			"\n",
+			"common",
+			"add_imagery",
+			"addimagery",
+			"addNSILIMAGERY",
+			"createRoot",
+			"bind",
+			"Bind",
+			"bind",
+			"host",
+			"FaceMovie",
+			"Facemovie",
+			"113",
+			"keystone",
+			"csd",
+			"ior",
+			"dir",
+			"ior",
+			"IOR",
+			"ior",
+			"distributable",
+			"filter",
+			"fileu",
+			"check_",
+			"check-",
+			"returns",
+			"out_fol",
+			"check"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"name",
+			"other_date",
+			"date1",
+			"#self.console_logger",
+			"self",
+			"statusbar",
+			"clear()",
+			"folder",
+			"print\"",
+			"print",
+			"Ivolution"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.722442277071,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 162.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

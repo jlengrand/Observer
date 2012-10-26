@@ -20,10 +20,10 @@ Observers subscribe or unsubscribe to an Observable to get notified any time mes
 
 ### JSon Structure:
 
-As already explained, the messages sent from the observable to the observers are formatted in JSon.
+As already explained, the messages sent from the observable to the observers are formatted as a JSon Object.
 This allows a simple yet efficient control of the data sent and received while staying in line with the standards.
 
-Each transmitted package should be divided into 4 sections:
+Each transmitted object should be divided into 4 sections:
 
 - name : The name of the Observer to send the data to. As each Observer is uniquely defined by its name, filling this section means  the data will be sent to **at most** one Observer.
 - group : The group of Observers to send the data to. Each Observer may belong to a group. All Observers in the group will then be notified.
@@ -58,6 +58,9 @@ Here is are several examples of valid JSon message :
 
 According to the [JSon specifications](http://json.org/),
 _A value can be a string in double quotes, or a number, or true or false or null, or an object or an array._
+
+**NOTE:** group handling is currently not implemented.
+In future improvements, It may also be possible to provide several names or group if needed.
 
 ## Description of the package
 

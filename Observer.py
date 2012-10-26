@@ -23,6 +23,8 @@ It is designed to use nothing but built-in python modules.
 Simply copy/paste this file and import Observer to start using it.
  """
 
+import json
+from StringIO import StringIO
 
 class Observer():
     """
@@ -39,6 +41,7 @@ class Observer():
             raise TypeError("Expected string for name")
 
         self.name = name
+        self.group = None
         self.message = None
 
     def update(self, message):
@@ -112,8 +115,30 @@ class Observable():
         Shall be used for automatic polling.
         Sets current Observable value and notifies update to subscribers.
         """
-        if not isinstance(val, str):
-            raise TypeError("Expected string for message")
+        #if not isinstance(val, str):
+        #    raise TypeError("Expected string for message")
+
+        self.is_json_valid(val)
 
         self.message = val
         self.__notify(self.message)
+
+    # JSON Stuff
+    def is_json_valid(self, val):
+        """
+        Returns True if val is a valid JSon Object.
+        Valid means :
+        - correctly formatted
+        - contains ONLY all needed 4 sections.
+        """
+        # json is valid
+        mess = json.loads(val)
+
+        # Cheks for the presence of tags
+        try:
+            #simply access all
+            expected = sorted(["name", "group", "type", "data"]) # should be placed somewhere else
+            got = sorted(mess.keys())
+            return (expected == got)
+        except KeyError:
+            return False
