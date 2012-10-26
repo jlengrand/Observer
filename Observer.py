@@ -50,10 +50,13 @@ class Observer():
         Automatically called each time Observer receives a notification.
         A notification updates message value
         """
-        if not isinstance(message, str):
+        ut = ObsUtility()
+        mess = json.loads(message)
+
+        if ut.is_json_valid(message):
+            self.message = message
+        else:
             raise TypeError("Expected string for message")
-        self.message = message
-        #print "%s received %s" % (self.name, message)
 
     def __str__(self):
         """
@@ -111,7 +114,7 @@ class Observable():
             #print "sent %s to %s" % (mess, str(observer))
             observer.update(mess)
 
-    def set_val(self, val=None):
+    def set_val(self, val):
         """
         Shall be used for automatic polling.
         Sets current Observable value and notifies update to subscribers.
@@ -128,7 +131,6 @@ class Observable():
 
 
 class ObsUtility():
-    # JSON Stuff
     def __init__(self):
         pass
 
@@ -141,7 +143,6 @@ class ObsUtility():
         """
         # json is valid
         mess = json.loads(val)
-
         # Cheks for the presence of tags
         try:
             #simply access all

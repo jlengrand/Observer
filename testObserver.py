@@ -63,7 +63,7 @@ class TestObserver(unittest.TestCase):
 
         # tests message and update
         self.assertEquals(self.myObserver1.message, None)
-        new_message = "new_message"
+        new_message = '{"name": "Bob","group": "","type": "","data": 42}'
         self.myObserver1.update(new_message)
         self.assertEquals(self.myObserver1.message, new_message)
         self.assertRaises(TypeError, lambda: self.myObserver1.update([4, 2]))
@@ -109,21 +109,21 @@ class TestObserver(unittest.TestCase):
         self.assertRaises(ValueError, lambda: self.myObservable.unsubscribe(self.myObserver1))  # already removed
         self.assertRaises(TypeError, lambda: self.myObservable.unsubscribe("Georges"))
 
-    # def testNotify(self):
-    #     self.myObservable.subscribe(self.myObserver1)
-    #     self.myObservable.subscribe(self.myObserver2)
+    def testNotify(self):
+        self.myObservable.subscribe(self.myObserver1)
+        self.myObservable.subscribe(self.myObserver2)
 
-    #     test = "R2D2"
-    #     self.myObservable.set_val(test)
-    #     self.assertEquals(self.myObserver1.message, test)
-    #     self.assertEquals(self.myObserver2.message, test)
+        test = '{"name": "R2D2","group": "","type": "","data": 42}'
+        self.myObservable.set_val(test)
+        self.assertEquals(self.myObserver1.message, test)
+        self.assertEquals(self.myObserver2.message, test)
 
 
-    #     self.myObservable.unsubscribe(self.myObserver1)
-    #     test2 = "C3PO"
-    #     self.myObservable.set_val(test2 )
-    #     self.assertEquals(self.myObserver1.message, test)
-    #     self.assertEquals(self.myObserver2.message, test2)
+        self.myObservable.unsubscribe(self.myObserver1)
+        test2 = '{"name": "C3PO","group": "","type": "","data": 42}'
+        self.myObservable.set_val(test2 )
+        self.assertEquals(self.myObserver1.message, test)
+        self.assertEquals(self.myObserver2.message, test2)
 
 
 if __name__ == '__main__':
